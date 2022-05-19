@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
+    <script src="app.js"></script>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logos/favicon96x96.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet"/>
+    <title>Aero-Space</title>
+  </head>
+  <body style="background-image: url(./images/moonbackground.png);" >
+    <header>
+      <nav class="stroke">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a class="active" href="./planeten.html">PLANETEN</a></li>
+        </ul>
+      </nav>
+      <a href="./index.html"><img src="./images/logos/logocolor.png" alt="logo"/></a>
+    </header>
+  <main>
+    <section>
+      <main class="begruessungstext">
+        <p id="aerospace">AERO-SPACE</p>
+        <p id="Reise">Die Planeten und deren Monde</p>
+        <br>
+        <br>
+      </main></section>
+    <div class="container">
+    </div>
+    <div style="margin-bottom: 3rem"></div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">Steckbrief</div>
+          <ul class="list-group list-group-flush">
+            <li id="identification" class="list-group-item">?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin-bottom: 1.5rem"></div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div id="moduleTitle" class="card-header">Top 10 Monde</div>
+          <ul class="list-group list-group-flush">
+            <li id="monde" class="list-group-item"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin-bottom: 2rem"></div>
+    <nav aria-label="Page navigation example">
+      <ul id="pagination" class="pagination">
+        <li class="page-item">
+          <a class="page-link" onclick="showPrevious()" href="#">Previous</a>
+        </li>
+        <li class="page-item"><p class="page-link" id="showIndex"></p></li>
+        <li class="page-item">
+          <a class="page-link" onclick="showNext()" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    </main>
+        <footer>
+          <script>
+          </script> 
+          <br><br><br><br>
+        </footer>
+    </body>
+</html>

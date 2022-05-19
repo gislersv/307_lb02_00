@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 16px;
+    padding: 0 100px;
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  body#index {
+    overflow: hidden;
+  }
+
+
+  
+  /**** HEADER ****/
+  /**** HEADER ****/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    z-index: 10;
+    position: relative;
+  }
+  
+  header img {
+    width: 70px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 40px 0 0;
+  }
+  
+  nav ul a:hover,
+  nav ul a.active {
+    transition: all 0.3s ease;
+    color: #f9b518;
+  }
+  
+  
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #F9B518;
+  }
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '.';
+    color: transparent;
+    background: #F9B518;
+    height: 1px;  
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+    nav.fill ul li a {
+    transition: all 2s;
+  }
+  
+    nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+    nav.fill ul li:hover {
+    color: #fff;
+    z-index: 1;
+  }
+    nav.fill ul a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  } 
+  
+  /************************************ H       I       N       T       E       R       G       R       U       N      D ******************************/
+  
+  
+  #hg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+  }
+  
+  .hg_img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: right;
+    z-index: 1;
+  }
+  
+  #elemente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .moon {
+    position: absolute;
+    right: 365px;
+    top: 33%;
+    width: 340px;
+    transition: all 1s ease-in;
+    z-index: 100;
+  }
+  .moon:hover {
+    width: 425px;
+    right: 325px;
+    top: 28%;
+    transform: rotate(360deg);
+    transition: all 1s ease-out;
+  }
+  
+  .bluesphere{   
+    position: absolute;
+    width: 60px;
+    right: 850px;
+    top: 58%;
+    animation-name:schweben; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.3s;
+  } 
+  
+  @keyframes schweben { 
+    0% { transform: translate(0, 0px); } 
+    50%  { transform: translate(0, 20px); } 
+    100%   { transform: translate(0, -0px);   }    
+  }
+  
+  .orangesphere {   
+    position: absolute;
+    width: 75px;
+    right: 825px;
+    top: 76% ;
+    animation-name:floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.1s;
+  
+  } 
+  
+  @keyframes floating { 
+    0% { transform: translate(0, 0px); } 
+    50%  { transform: translate(0, 20px); } 
+    100%   { transform: translate(0, -0px);   }    
+  }
+  
+  .purplesphere{   
+    position: absolute;
+    width: 65px;
+    right: 650px;
+    top: 83%;
+    animation-name:himmelig; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.5s;
+  } 
+  
+  @keyframes himmelig { 
+    0% { transform: translate(0, 0px); } 
+    50%  { transform: translate(0, 20px); } 
+    100%   { transform: translate(0, -0px);   }    
+  }
+  
+  /************************************ M         A         I         N ******************************/
+  
+  main {
+    position: relative;
+    z-index: 5;
+  }
+  
+  main.begruessungstext {
+    font-family: "Montserrat", sans-serif;
+    color: #f9b518;
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    width: 35vw;
+  }
+  
+  #aerospace {
+    font-size: 4.5rem;
+    font-weight: 700;
+    transition: all 1s ease-in;
+  }
+
+  #aerospace:hover {
+    color: white;
+    transition: all 1s ease-out;
+  }
+  #Reise {
+    font-size: 2rem;
+    margin-top: 25px;
+    font-weight: 300;
+    width: 28vw;
+    transition: all .5s ease-in
+
+  }
+  #Reise:hover {
+    transition: all .5s ease-out;
+    color: #ffffff;
+  }
+
+  h2 {
+      margin: 25px 0 2px 0;
+      font-size: calc(1em + 1vw);
+      font-family: "Fjalla One", sans-serif;
+      text-transform: uppercase;  
+      letter-spacing: 0.1em; 
+      transition: all 1s ease-in
+  }
+
+h2:hover {
+    color: #f9b518;
+    transition: all 1s ease-out;
+  }
+
+  p {
+    margin: 20px 0 2px 0;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+
+#bottommoon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 1;
+  background-image: url(./images/moonbackground.png);
+  background-size: cover;
+}
+
+#bottommoon img {
+    width: 100%;
+}
+
+.moonbackground {
+
+  object-fit: cover;
+  object-position: right;
+  z-index: 1;
+}
