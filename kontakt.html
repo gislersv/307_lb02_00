@@ -17,7 +17,7 @@
             <li><a href="./index.html">HOME</a></li>
             <li><a href="./planeten.html">PLANETEN</a></li>
             <li><a class="active" href="./kontakt.html">KONTAKT</a></li>
-
+$
         </ul>
     </nav>
     <a href="./index.html"><img src="./images/logos/weiss_logolb02-03.png" alt="logo"/></a>
@@ -32,6 +32,48 @@
     </label>
 </section>
 <main class="begruessungstext">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Kontaktformular</title>
+    </head>
+    <body>
+    <h1>Kontaktformular</h1>
+    <p>
+        Geschlecht:<br>
+        <select name="thema1">
+            <option value="val1" selected>Wählen</option>
+            <option value="val2">Weiblich</option>
+            <option value="val3">mänlich</option>
+            <option value="val4">anderes</option>
+        </select>
+    </p>
+    <form>
+        Namen eingeben:
+        <input type="text" name="einName" size="30" maxlength="40">
+    </form>
+    <form>
+        Alter:
+        <input type="text" name="einName" size="30" maxlength="40">
+    </form>
+    <p>Email:
+        <input name="email" type="email" required size="21" maxlength="50"></p>
+    <form>
+        <p>Für was wollen sie das:</p>
+        <p>
+            <input type="radio" name="room" value="budget">Privat<br>
+            <input type="radio" name="room" value="standard" checked>Geschäftlich<br>
+            <input type="radio" name="room" value="deluxe">Schulisch
+        </p>
+    </form>
+    <form>
+        Ergänzungen:<br>
+        <textarea name="txt" rows="5" cols="39" maxlength="2500">
+          </textarea>
+    </form>
+    <input type="submit" value="Submit">
+    </body>
+</html>
+
     <p id="aerospace">AERO-SPACE</p>
     <p id="Reise">Die Reise ins Weltall<br> mit Luis und Svenja mit der <s>Apollo 11</s> LB02</p>
 </main>
