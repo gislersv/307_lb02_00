@@ -1,4 +1,4 @@
-<!DOC<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8"/>
@@ -33,17 +33,11 @@
     </label>
 </section>
 <main class="begruessungstext">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Kontaktformular</title>
-    </head>
-    <body>
     <h1>Kontaktformular</h1>
     <form>
         <p>
             Geschlecht:<br>
             <select name="thema1">
-                <option value="val1" selected>Wählen</option>
                 <option value="val2">weiblich</option>
                 <option value="val3">männlich</option>
                 <option value="val4">anderes</option>
@@ -51,8 +45,12 @@
         </p>
         Namen eingeben:
         <input type="text" name="einName" size="30" maxlength="40">
+
         Alter:
-        <input type="text" name="einName" size="30" maxlength="40">
+        <input type="number" name="einName" size="30" min="0">
+
+        Telefon:
+        <input type="tel" name="einName" size="30" maxlength="40">
 
         <p>Email:
             <input name="email" type="email" required size="21" maxlength="50"></p>
@@ -69,17 +67,8 @@
 
         <input type="submit" value="Submit">
     </form>
-
-
-    </body>
-</html>
-
-<p id="aerospace">AERO-SPACE</p>
-<p id="Reise">Die Reise ins Weltall<br> mit Luis und Svenja mit der <s>Apollo 11</s> LB02</p>
 </main>
-<footer>
-    <script>
-    </script>
-</footer>
+
+
 </body>
 </html>
