@@ -27,7 +27,7 @@
 </section>
 <main class="begruessungstext">
     <h1>Kontaktformular</h1>
-    <form>
+    <form action="http://localhost:3000/register" method="post">
         <p>
             Geschlecht:
             <select name="gender">
@@ -50,9 +50,9 @@
             <input placeholder="Email Adresse" name="email" type="email" required size="21" maxlength="50"></p>
         <p>Grund der Anfrage:</p>
         <p>
-            <input type="radio" name="room" value="budget">Privat<br>
-            <input type="radio" name="room" value="standard" checked>Geschäftlich<br>
-            <input type="radio" name="room" value="deluxe">Schulisch
+            <input type="radio" name="reason" value="budget">Privat<br>
+            <input type="radio" name="reason" value="standard" checked>Geschäftlich<br>
+            <input type="radio" name="reason" value="deluxe">Schulisch
         </p>
         <br>
         Ergänzungen:
