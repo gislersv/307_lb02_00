@@ -14,7 +14,7 @@ console.log(`Running at Port ${port}`);
 server.timeout = 1000 * 60 * 2; // 2 minutes
 
 //Warning: Korrekt setzen!!
-const staticPath = './12b_validation_server/03_Solutions/register-server-02/data/';
+const staticPath = './server/data';
 const registrationFile = staticPath+'registration.json';
 
 
@@ -37,10 +37,6 @@ app.get('/lb02', (req, res) => {
 app.use(bodyParser.json());
 // support encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
-
-/*  1. Writing to file
-    https://stackabuse.com/reading-and-writing-json-files-with-node-js/
- */
 
 app.post('/register', (req, res) => {
 
