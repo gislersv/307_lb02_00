@@ -18,7 +18,7 @@ function checkEmail(id,input) {
         msg: showSuccess(id)
     }
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!re.test(input)){
+    if (!re.test(input.trim())) {
         result = {
             isNotValid: true,
             msg: showError(id, 'Email is not valid')
@@ -37,7 +37,7 @@ function checkRequired(id, input) {
         msg: showSuccess(id)
     }
     //if input is empty ...
-    if (input === '') {
+    if (input.trim() === '') {
         //.. then it's not valid
         result = {
             isNotValid: true,
