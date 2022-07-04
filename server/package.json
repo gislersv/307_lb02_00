@@ -1,11 +1,10 @@
 {
   "name": "307_lb02_00",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "LB02",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "registrationserver": "node server/server.js"
   },
   "author": "",
   "license": "ISC",
