@@ -268,7 +268,7 @@ h2:hover {
   left: 0;
   display: block;
   z-index: 1;
-  background-image: url(./images/moonbackground.png);
+  background-image: url(../../img/moonbackground.png);
   background-size: cover;
 }
 
