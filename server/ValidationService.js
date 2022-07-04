@@ -24,6 +24,9 @@ function validateUser(userObj) {
     result = validateLib.checkRequired("reason", userObj.reason);
     if (result.isNotValid) { return result; }
 
+    result = validateLib.checkRequired("txt", userObj.txt);
+    if (result.isNotValid) { return result; }
+
 
     //check length
     result = validateLib.checkLength("name",userObj.name, 3, 15);
