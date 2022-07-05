@@ -36,14 +36,9 @@ function checkRequired(id, input) {
         isNotValid: false,
         msg: showSuccess(id)
     }
-    //if input is empty ...
-    if (input.trim() === '') {
-        //.. then it's not valid
-        result = {
-            isNotValid: true,
-            msg: showError(id, `${input.toString()} is required`)
-        }
-    }
+
+
+
     //return validation result
     return result;
 }
