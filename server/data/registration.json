@@ -1,2 +1,31 @@
 [
+  {
+    "id": "d4d9b525-7cde-4b9c-a728-fe95b3a84676",
+    "gender": "weiblich",
+    "name": "Svenja Gisler",
+    "age": "18",
+    "phone": "0767676767",
+    "email": "svenja.gisler@test.ch",
+    "reason": "Geschäftlich",
+    "txt": "Das ist die LB02."
+  },
+  {
+    "id": "845ea55f-44fd-4924-8b54-1d54ba897aaa",
+    "name": "Svenja Gisler",
+    "age": "18",
+    "phone": "0767676767",
+    "email": "svenja.gisler@test.ch",
+    "reason": "Geschäftlich",
+    "txt": "Das ist die LB02."
+  },
+  {
+    "id": "b5eb80d3-6ccc-4592-acb0-afaaef9107d6",
+    "gender": "weiblich",
+    "name": "Anna Muster",
+    "age": "18",
+    "phone": "0767676767",
+    "email": "anna.muster@test.ch",
+    "reason": "Geschäftlich",
+    "txt": "Das ist die LB02."
+  }
 ]
